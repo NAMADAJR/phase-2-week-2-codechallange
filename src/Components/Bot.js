@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Bot = ({ bot }) => {
+const Bot = ({ bot , enlistBot }) => {
   return (
     <div className="Bot">
       <img src={bot.avatar_url} alt={bot.name} />
@@ -9,6 +9,7 @@ const Bot = ({ bot }) => {
       <h3>Health: {bot.health}</h3>
       <h3>Damage: {bot.damage}</h3>
       <h3>Armor: {bot.armor}</h3>
+      <button onClick={enlistBot}>Enlist Bot</button>
     </div>
   )
 }
