@@ -28,11 +28,11 @@ const BotCollection = () => {
   return (
     <div>
       <div className="Title">
-      <h2>Bot Collection</h2>
+      <h1>Bot Collection</h1>
       </div>
       <div className="BotCollection">{displayBots}</div>
       <div className="Title">
-      <h2>Bot Army</h2>
+      <h1>Bot Army</h1>
       </div>
       <BotArmy bots={enlistedBots} />
     </div>
