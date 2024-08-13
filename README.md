@@ -6,7 +6,7 @@
 
 This React application allows users to view a collection of bots, enlist bots into an army, and retire them from the army. The bots can only be enlisted once and can be retired both on the front and backend. The application fetches bot data from a mock backend.
 
-This is the link to the website: [](https://phase-2-week-2-codechallange.vercel.app/)
+This is the link to the website: [https://phase-2-week-2-codechallange.vercel.app/](https://phase-2-week-2-codechallange.vercel.app/)
 
 ## Features of the project
 
