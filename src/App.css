@@ -1,25 +1,45 @@
-body{
+body {
   color: white;
   background: black;
 }
 
-.Title{
+.Title {
   text-align: center;
   margin: 12px;
   padding: 12px;
-} 
+  text-decoration: underline white;
+}
 
-.BotCollection{
+.BotCollection {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.Bot{
-  margin: 12px;
-  padding: 12px;
+.Bot {
+  margin: 20px;
+  padding: 20px;
   border: 3px solid white;
   border-radius: 10px;
   text-align: center;
-  width: 300px;
+}
+
+.BotArmy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#enlist {
+  color: black;
+  background-color: green;
+  text-align: center;
+  font-size: 20px;
+}
+
+#retire {
+  color: black;
+  background-color: red;
+  text-align: center;
+  font-size: 20px;
 }
