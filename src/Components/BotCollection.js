@@ -7,7 +7,7 @@ const BotCollection = () => {
   const [enlistedBots, setEnlistedBots] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/bots")
+    fetch("https://phase-2-week-2-codechallange-mock-backend.vercel.app/bots")
       .then((res) => res.json())
       .then((data) => setBots(data))
       .catch((error) => console.log(error));
@@ -19,6 +19,12 @@ const BotCollection = () => {
     }
   };
 
+  const retireBot = (bot) => {
+    setEnlistedBots(
+      enlistedBots.filter((enlistedBot) => enlistedBot.id !== bot.id)
+    );
+  };
+
   const displayBots = bots.map((bot) => (
     <div key={bot.id}>
       <Bot bot={bot} enlistBot={() => enlistBot(bot)} />
@@ -28,13 +34,13 @@ const BotCollection = () => {
   return (
     <div>
       <div className="Title">
-      <h1>Bot Collection</h1>
+        <h1>Bot Collection</h1>
       </div>
       <div className="BotCollection">{displayBots}</div>
       <div className="Title">
-      <h1>Bot Army</h1>
+        <h1>Bot Army</h1>
       </div>
-      <BotArmy bots={enlistedBots} />
+      <BotArmy bots={enlistedBots} retireBot={retireBot} />
     </div>
   );
 };
